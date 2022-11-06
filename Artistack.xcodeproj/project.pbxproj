@@ -259,11 +259,138 @@
 		2936958A289BB1B40042B541 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				29FED2AD28B0EBE2005B0546 /* DataManager */,
-				29FED2AC28B0EB5A005B0546 /* Cell */,
-				2936958B289BB1C80042B541 /* SignInViewController.swift */,
+				293F11B8291785B000052456 /* Resources */,
+				293F11B7291785A900052456 /* Sources */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		293F11AF2917828100052456 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				293F11B62917848C00052456 /* APIServices */,
+				293F11B52917848500052456 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		293F11B02917828700052456 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				293F11B22917836100052456 /* Models */,
+				29B6CF0A2888F71B00E0843D /* Cells */,
+				293F11B12917828F00052456 /* VCs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		293F11B12917828F00052456 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2936958128978FE90042B541 /* MyPostViewController.swift */,
+				29808413289263740059C4A0 /* ProfilePhotoEditViewController.swift */,
+				299EE83F289166BA009576B6 /* ProfileEditViewController.swift */,
+				5C9DCDE628850C62009252FF /* ProfileViewController.swift */,
+				B4A8699B28B1ECAD0024B9B7 /* SettingViewController.swift */,
+				B46B80DD28B4F93C00645D9C /* PleaseViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		293F11B22917836100052456 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD982C28B41676008B8153 /* GetProjectModel.swift */,
+				29FED2CF28B0EE99005B0546 /* ImageModel.swift */,
+				29FED2C628B0ED9E005B0546 /* ProfileEditInput.swift */,
+				B420D6D428AF7E47009D05CA /* ReissueInput.swift */,
+				B42C5E5E28AE7EA5005C5628 /* MyprojectInput.swift */,
+				29FED2CA28B0EDB9005B0546 /* ProfileEditModel.swift */,
+				29FED2C328B0ED72005B0546 /* ProfileModel.swift */,
+				B420D6D228AF6151009D05CA /* ReissueModel.swift */,
+				B42C5E6028AE7EB2005C5628 /* MyprojectModel.swift */,
+				29FED2C028B0ED1F005B0546 /* MyprojectDeleteDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		293F11B52917848500052456 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		293F11B62917848C00052456 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				B4AD983228B416B6008B8153 /* GetProjectDataManager.swift */,
+				29FED2CD28B0EE8B005B0546 /* ImageUploadManager.swift */,
+				29FED2C828B0EDAE005B0546 /* ProfileEditDataManager.swift */,
+				B420D6CF28AF59AA009D05CA /* interceptor.swift */,
+				B42C5E6228AE7EC2005C5628 /* MyprojectDataManager.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		293F11B7291785A900052456 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				293F11BD291785D000052456 /* VCs */,
+				293F11BB291785C600052456 /* Models */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		293F11B8291785B000052456 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				293F11BA291785C100052456 /* Storyboards */,
+				293F11B9291785BA00052456 /* APIServices */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		293F11B9291785BA00052456 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				29FED2AF28B0EBE2005B0546 /* KaKaoDataManager.swift */,
+				29FED2B628B0EBE2005B0546 /* UserDataManager.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		293F11BA291785C100052456 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		293F11BB291785C600052456 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29FED2B028B0EBE2005B0546 /* KakaoModel.swift */,
+				29FED2B328B0EBE2005B0546 /* IdDuplicateModel.swift */,
+				29FED2B128B0EBE2005B0546 /* KakaoAccesToken.swift */,
+				29FED2B528B0EBE2005B0546 /* UserInput.swift */,
+				29FED2B728B0EBE2005B0546 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		293F11BD291785D000052456 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				29369590289E663C0042B541 /* FirstSignUpViewController.swift */,
+				29369594289E66590042B541 /* ThirdSignUpViewController.swift */,
+				2936958B289BB1C80042B541 /* SignInViewController.swift */,
+				29369596289E66620042B541 /* FinalSignUpViewController.swift */,
+				2936959828A013630042B541 /* FinishSignUpViewController.swift */,
+				2997536528A0A67800280D10 /* ProfilePhotoSetViewController.swift */,
+				29369592289E66460042B541 /* SecondSignUpViewController.swift */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 		2940055785B64F7F4D5AE304 /* Frameworks */ = {
@@ -290,128 +417,18 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		29B6CF0A2888F71B00E0843D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				29B6CF282889463F00E0843D /* PostCell */,
-				29B6CF272889462600E0843D /* ProfileCell */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		29B6CF272889462600E0843D /* ProfileCell */ = {
+		29B6CF0A2888F71B00E0843D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				299EE8412891969D009576B6 /* ProfileCollectionViewCell.xib */,
-				29B6CF0B2888F75000E0843D /* ProfileCollectionViewCell.swift */,
-				29808413289263740059C4A0 /* ProfilePhotoEditViewController.swift */,
-				299EE83F289166BA009576B6 /* ProfileEditViewController.swift */,
-			);
-			path = ProfileCell;
-			sourceTree = "<group>";
-		};
-		29B6CF282889463F00E0843D /* PostCell */ = {
-			isa = PBXGroup;
-			children = (
 				29B6CF292889465E00E0843D /* PostCollectionViewCell.swift */,
 				29B6CF2A2889465E00E0843D /* PostCollectionViewCell.xib */,
 				29AA3ACE288E972C002D38FE /* CollectionReusableView.swift */,
-				2936958128978FE90042B541 /* MyPostViewController.swift */,
 				29AA3ACF288E972C002D38FE /* CollectionReusableView.xib */,
 				29AA3AD4288E9D17002D38FE /* CustomCollectionViewFlowLayout.swift */,
+				29B6CF0B2888F75000E0843D /* ProfileCollectionViewCell.swift */,
 			);
-			path = PostCell;
-			sourceTree = "<group>";
-		};
-		29FED2AC28B0EB5A005B0546 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				29369590289E663C0042B541 /* FirstSignUpViewController.swift */,
-				29369594289E66590042B541 /* ThirdSignUpViewController.swift */,
-				29369596289E66620042B541 /* FinalSignUpViewController.swift */,
-				2936959828A013630042B541 /* FinishSignUpViewController.swift */,
-				2997536528A0A67800280D10 /* ProfilePhotoSetViewController.swift */,
-				29369592289E66460042B541 /* SecondSignUpViewController.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		29FED2AD28B0EBE2005B0546 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2AE28B0EBE2005B0546 /* KakaoDataManager */,
-				29FED2B228B0EBE2005B0546 /* IdDataManager */,
-				29FED2B428B0EBE2005B0546 /* UserDataManager */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		29FED2AE28B0EBE2005B0546 /* KakaoDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2AF28B0EBE2005B0546 /* KaKaoDataManager.swift */,
-				29FED2B128B0EBE2005B0546 /* KakaoAccesToken.swift */,
-				29FED2B028B0EBE2005B0546 /* KakaoModel.swift */,
-			);
-			path = KakaoDataManager;
-			sourceTree = "<group>";
-		};
-		29FED2B228B0EBE2005B0546 /* IdDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2B328B0EBE2005B0546 /* IdDuplicateModel.swift */,
-			);
-			path = IdDataManager;
-			sourceTree = "<group>";
-		};
-		29FED2B428B0EBE2005B0546 /* UserDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2B528B0EBE2005B0546 /* UserInput.swift */,
-				29FED2B628B0EBE2005B0546 /* UserDataManager.swift */,
-				29FED2B728B0EBE2005B0546 /* UserModel.swift */,
-			);
-			path = UserDataManager;
-			sourceTree = "<group>";
-		};
-		29FED2BF28B0ECBD005B0546 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				B4AD982B28B41654008B8153 /* GetProject */,
-				29FED2CC28B0EE7C005B0546 /* ImageUploadManager */,
-				29FED2C528B0ED80005B0546 /* ProfileEditDataManager */,
-				29FED2C228B0ED63005B0546 /* ProfileDataManager */,
-				B420D6D128AF6139009D05CA /* Reissue */,
-				B42C5E5D28AE7E88005C5628 /* MyProjectDataManager */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		29FED2C228B0ED63005B0546 /* ProfileDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2C328B0ED72005B0546 /* ProfileModel.swift */,
-			);
-			path = ProfileDataManager;
-			sourceTree = "<group>";
-		};
-		29FED2C528B0ED80005B0546 /* ProfileEditDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2C628B0ED9E005B0546 /* ProfileEditInput.swift */,
-				29FED2C828B0EDAE005B0546 /* ProfileEditDataManager.swift */,
-				29FED2CA28B0EDB9005B0546 /* ProfileEditModel.swift */,
-			);
-			path = ProfileEditDataManager;
-			sourceTree = "<group>";
-		};
-		29FED2CC28B0EE7C005B0546 /* ImageUploadManager */ = {
-			isa = PBXGroup;
-			children = (
-				29FED2CD28B0EE8B005B0546 /* ImageUploadManager.swift */,
-				29FED2CF28B0EE99005B0546 /* ImageModel.swift */,
-			);
-			path = ImageUploadManager;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		5C690F2C28A7E88E00B347FC /* Model */ = {
@@ -525,34 +542,10 @@
 		5C9DCDE528850C3C009252FF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B46B80DD28B4F93C00645D9C /* PleaseViewController.swift */,
-				29FED2BF28B0ECBD005B0546 /* DataManager */,
-				29B6CF0A2888F71B00E0843D /* Cell */,
-				5C9DCDE628850C62009252FF /* ProfileViewController.swift */,
-				B4A8699B28B1ECAD0024B9B7 /* SettingViewController.swift */,
+				293F11B02917828700052456 /* Sources */,
+				293F11AF2917828100052456 /* Resources */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		B420D6D128AF6139009D05CA /* Reissue */ = {
-			isa = PBXGroup;
-			children = (
-				B420D6CF28AF59AA009D05CA /* interceptor.swift */,
-				B420D6D228AF6151009D05CA /* ReissueModel.swift */,
-				B420D6D428AF7E47009D05CA /* ReissueInput.swift */,
-			);
-			path = Reissue;
-			sourceTree = "<group>";
-		};
-		B42C5E5D28AE7E88005C5628 /* MyProjectDataManager */ = {
-			isa = PBXGroup;
-			children = (
-				B42C5E5E28AE7EA5005C5628 /* MyprojectInput.swift */,
-				B42C5E6028AE7EB2005C5628 /* MyprojectModel.swift */,
-				29FED2C028B0ED1F005B0546 /* MyprojectDeleteDataModel.swift */,
-				B42C5E6228AE7EC2005C5628 /* MyprojectDataManager.swift */,
-			);
-			path = MyProjectDataManager;
 			sourceTree = "<group>";
 		};
 		B46EE84728B0958300DB2935 /* OAuth */ = {
@@ -625,15 +618,6 @@
 				B48BB53528A56847005ECD30 /* TabBarController.swift */,
 			);
 			path = MainApplication;
-			sourceTree = "<group>";
-		};
-		B4AD982B28B41654008B8153 /* GetProject */ = {
-			isa = PBXGroup;
-			children = (
-				B4AD982C28B41676008B8153 /* GetProjectModel.swift */,
-				B4AD983228B416B6008B8153 /* GetProjectDataManager.swift */,
-			);
-			path = GetProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
