@@ -461,7 +461,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
         print("tapped")
                   self.navigationController?.popViewController(animated: true)
 
-                    let myPostVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingVC") as? SettingViewController
+                    let myPostVC = UIStoryboard(name: "Setting", bundle: nil).instantiateViewController(withIdentifier: "SettingVC") as? SettingViewController
                         // 뒤로가기 버튼 커스텀
                         let backBarButtonItem = UIBarButtonItem(title: "설정", style: .plain, target: self, action: nil)
                         backBarButtonItem.tintColor = .white
@@ -479,7 +479,7 @@ extension ProfileViewController: ProfileCollectionViewCellDelegate {
         backBarButtonItem.tintColor = .white
         self.navigationItem.backBarButtonItem = backBarButtonItem
         
-        let profileEditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ProfileEditVC") as! ProfileEditViewController
+        let profileEditViewController = UIStoryboard(name: "ProfileEdit", bundle: nil).instantiateViewController(withIdentifier: "ProfileEditVC") as! ProfileEditViewController
         
         // 기존 프로필사진, 닉네임, 소개글 정보 넘기기
         profileEditViewController.profileImgStr = imgStr

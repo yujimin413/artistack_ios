@@ -57,7 +57,7 @@ class FirstSignUpViewController: UIViewController {
         backBarButtonItem.tintColor = .white
         self.navigationItem.backBarButtonItem = backBarButtonItem
         
-        let SecondSignUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SecondSignUpVC") as! SecondSignUpViewController
+        let SecondSignUpVC = UIStoryboard(name: "Signin", bundle: nil).instantiateViewController(withIdentifier: "SecondSignUpVC") as! SecondSignUpViewController
         SecondSignUpVC.artistackId = self.idTextField.text ?? ""
         
         self.present(SecondSignUpVC, animated: true, completion: nil)

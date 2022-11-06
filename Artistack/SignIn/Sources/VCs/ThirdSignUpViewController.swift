@@ -74,7 +74,7 @@ class ThirdSignUpViewController: UIViewController, callProfilePhotoSetVC {
 //        self.navigationItem.backBarButtonItem = backBarButtonItem
         
         
-        let FinalSignUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FinalSignUpVC") as! FinalSignUpViewController
+        let FinalSignUpVC = UIStoryboard(name: "Signin", bundle: nil).instantiateViewController(withIdentifier: "FinalSignUpVC") as! FinalSignUpViewController
         FinalSignUpVC.nickname = nickname
         FinalSignUpVC.artistackId = artistackId
         FinalSignUpVC.bio = introTextView.text.filter { !$0.isNewline }

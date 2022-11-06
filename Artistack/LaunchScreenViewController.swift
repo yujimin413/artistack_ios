@@ -53,7 +53,7 @@ class LaunchScreenViewController: UIViewController {
         }
         
         private func presentToLogin() {
-            guard let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInVC") as? SignInViewController else { return }
+            guard let loginVC = UIStoryboard(name: "Signin", bundle: nil).instantiateViewController(withIdentifier: "SignInVC") as? SignInViewController else { return }
             loginVC.modalPresentationStyle = .fullScreen
             loginVC.modalTransitionStyle = .crossDissolve
             self.present(loginVC, animated: true, completion: nil)

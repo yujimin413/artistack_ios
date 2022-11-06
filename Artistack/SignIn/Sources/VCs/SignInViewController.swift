@@ -183,7 +183,7 @@ class SignInViewController: UIViewController {
                 let backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
                 backBarButtonItem.tintColor = .white
                 self.navigationItem.backBarButtonItem = backBarButtonItem
-                let FirstSignUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FirstSignUpVC") as! FirstSignUpViewController
+                let FirstSignUpVC = UIStoryboard(name: "Signin", bundle: nil).instantiateViewController(withIdentifier: "FirstSignUpVC") as! FirstSignUpViewController
                 self.present(FirstSignUpVC, animated: true, completion: nil)
             }
         }

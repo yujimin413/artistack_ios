@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="fwn-Da-kBD">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" modalPresentationStyle="fullScreen" id="7Ko-SL-uUw" customClass="ProfileViewController" customModule="Artistack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HBx-bN-rEx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2bs-wG-6Ox">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" red="0.062745101750000004" green="0.086274504660000001" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="9Fd-1j-hpq">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="25" minY="0.0" maxX="25" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_posts" translatesAutoresizingMaskIntoConstraints="NO" id="TnJ-7J-jNL">
+                                <rect key="frame" x="49" y="422.66666666666669" width="292" height="125.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="8Ok-P9-isk"/>
+                                    <constraint firstAttribute="width" constant="292" id="l6d-NK-3Ki"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Oce-l0-lWN">
+                                <rect key="frame" x="180" y="411" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="LXz-bu-3XN"/>
+                                    <constraint firstAttribute="height" constant="30" id="XKr-sd-AzT"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OEa-m8-NYU"/>
+                        <color key="backgroundColor" red="0.062745101750000004" green="0.086274504660000001" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Oce-l0-lWN" firstAttribute="centerY" secondItem="OEa-m8-NYU" secondAttribute="centerY" id="1rc-Pf-GaF"/>
+                            <constraint firstItem="OEa-m8-NYU" firstAttribute="bottom" secondItem="2bs-wG-6Ox" secondAttribute="bottom" id="8di-DW-czX"/>
+                            <constraint firstItem="2bs-wG-6Ox" firstAttribute="top" secondItem="OEa-m8-NYU" secondAttribute="top" id="91w-Cn-Ipq"/>
+                            <constraint firstItem="OEa-m8-NYU" firstAttribute="trailing" secondItem="2bs-wG-6Ox" secondAttribute="trailing" id="CxV-3l-9dL"/>
+                            <constraint firstItem="TnJ-7J-jNL" firstAttribute="centerX" secondItem="HBx-bN-rEx" secondAttribute="centerX" id="Jfq-0C-fNs"/>
+                            <constraint firstItem="Oce-l0-lWN" firstAttribute="centerX" secondItem="OEa-m8-NYU" secondAttribute="centerX" id="Teo-LO-hRV"/>
+                            <constraint firstItem="2bs-wG-6Ox" firstAttribute="leading" secondItem="OEa-m8-NYU" secondAttribute="leading" id="gXZ-MP-flz"/>
+                            <constraint firstItem="TnJ-7J-jNL" firstAttribute="centerY" secondItem="HBx-bN-rEx" secondAttribute="centerY" multiplier="1.15" id="naj-zn-IZN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ueV-Fd-7l9"/>
+                    <connections>
+                        <outlet property="activityMonitor" destination="Oce-l0-lWN" id="zVM-4i-znG"/>
+                        <outlet property="no_posts" destination="TnJ-7J-jNL" id="fdW-Cb-n0R"/>
+                        <outlet property="profileCollectionView" destination="2bs-wG-6Ox" id="ykN-0y-S58"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnb-eN-NYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981.1594202898552" y="1492.6339285714284"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s4y-7b-ZId">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-CVT-m7-0ot" automaticallyAdjustsScrollViewInsets="NO" id="CVT-m7-0ot" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="Profile" id="LLs-cW-fWW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9ap-w5-DIr">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7Ko-SL-uUw" kind="relationship" relationship="rootViewController" id="0Cf-uU-8qF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kjw-BI-75N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.0144927536232" y="1492.6339285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile" width="50" height="50"/>
+        <image name="no_posts" width="292" height="125"/>
+    </resources>
+</document>

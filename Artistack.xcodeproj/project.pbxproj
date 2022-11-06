@@ -14,6 +14,10 @@
 		29369595289E66590042B541 /* ThirdSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29369594289E66590042B541 /* ThirdSignUpViewController.swift */; };
 		29369597289E66620042B541 /* FinalSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29369596289E66620042B541 /* FinalSignUpViewController.swift */; };
 		2936959928A013630042B541 /* FinishSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2936959828A013630042B541 /* FinishSignUpViewController.swift */; };
+		293F11C9291792CB00052456 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11C7291792CB00052456 /* MyProfile.storyboard */; };
+		293F11CC2917945A00052456 /* ProfileEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11CA2917945A00052456 /* ProfileEdit.storyboard */; };
+		293F11CE291794D800052456 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11CD291794D800052456 /* Setting.storyboard */; };
+		293F11D3291795C300052456 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293F11D2291795C300052456 /* Signin.storyboard */; };
 		29808414289263740059C4A0 /* ProfilePhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29808413289263740059C4A0 /* ProfilePhotoEditViewController.swift */; };
 		299155CD288579DC001FAED2 /* Pretendard-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 299155C4288579DB001FAED2 /* Pretendard-Black.otf */; };
 		299155CE288579DC001FAED2 /* Pretendard-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 299155C5288579DB001FAED2 /* Pretendard-ExtraBold.otf */; };
@@ -126,6 +130,10 @@
 		29369594289E66590042B541 /* ThirdSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSignUpViewController.swift; sourceTree = "<group>"; };
 		29369596289E66620042B541 /* FinalSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSignUpViewController.swift; sourceTree = "<group>"; };
 		2936959828A013630042B541 /* FinishSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishSignUpViewController.swift; sourceTree = "<group>"; };
+		293F11C8291792CB00052456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Artistack/Base.lproj/MyProfile.storyboard; sourceTree = SOURCE_ROOT; };
+		293F11CB2917945A00052456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Artistack/Base.lproj/ProfileEdit.storyboard; sourceTree = SOURCE_ROOT; };
+		293F11CD291794D800052456 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = SOURCE_ROOT; };
+		293F11D2291795C300052456 /* Signin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = SOURCE_ROOT; };
 		29808413289263740059C4A0 /* ProfilePhotoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoEditViewController.swift; sourceTree = "<group>"; };
 		299155C4288579DB001FAED2 /* Pretendard-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Black.otf"; sourceTree = "<group>"; };
 		299155C5288579DB001FAED2 /* Pretendard-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-ExtraBold.otf"; sourceTree = "<group>"; };
@@ -317,6 +325,9 @@
 		293F11B52917848500052456 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				293F11CD291794D800052456 /* Setting.storyboard */,
+				293F11CA2917945A00052456 /* ProfileEdit.storyboard */,
+				293F11C7291792CB00052456 /* MyProfile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -363,6 +374,7 @@
 		293F11BA291785C100052456 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				293F11D2291795C300052456 /* Signin.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -700,7 +712,9 @@
 				5C800CB6287A5F8A00F393D6 /* Assets.xcassets in Resources */,
 				B48BB52628A566B6005ECD30 /* Media.storyboard in Resources */,
 				299155D1288579DC001FAED2 /* Pretendard-Light.otf in Resources */,
+				293F11CE291794D800052456 /* Setting.storyboard in Resources */,
 				5CC24D1628B7537D00A0311C /* Home.storyboard in Resources */,
+				293F11D3291795C300052456 /* Signin.storyboard in Resources */,
 				5C800CB4287A5F8900F393D6 /* Main.storyboard in Resources */,
 				5CC24D1C28B7537D00A0311C /* StackerCollectionViewCell.xib in Resources */,
 				299155CF288579DC001FAED2 /* Pretendard-Regular.otf in Resources */,
@@ -708,7 +722,9 @@
 				B48BB52828A566B6005ECD30 /* InstCollectionViewCell.xib in Resources */,
 				299155D4288579DC001FAED2 /* Pretendard-Medium.otf in Resources */,
 				299155D2288579DC001FAED2 /* Pretendard-Thin.otf in Resources */,
+				293F11CC2917945A00052456 /* ProfileEdit.storyboard in Resources */,
 				299155CD288579DC001FAED2 /* Pretendard-Black.otf in Resources */,
+				293F11C9291792CB00052456 /* MyProfile.storyboard in Resources */,
 				29B6CF2C2889465E00E0843D /* PostCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -851,6 +867,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		293F11C7291792CB00052456 /* MyProfile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293F11C8291792CB00052456 /* Base */,
+			);
+			name = MyProfile.storyboard;
+			sourceTree = "<group>";
+		};
+		293F11CA2917945A00052456 /* ProfileEdit.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293F11CB2917945A00052456 /* Base */,
+			);
+			name = ProfileEdit.storyboard;
+			sourceTree = "<group>";
+		};
 		5C800CB2287A5F8900F393D6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
