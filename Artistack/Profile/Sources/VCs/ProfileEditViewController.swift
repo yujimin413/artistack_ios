@@ -46,6 +46,8 @@ class ProfileEditViewController: UIViewController , callProfilePhotoEditVC {
     let saveButtonDisabledImage = UIImage(named: "savebutton_disabled")
     let saveButtonAbledImage = UIImage(named: "savebutton_abled")
     
+    var delegate : ProfileReloadDelegate?
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,6 +85,14 @@ class ProfileEditViewController: UIViewController , callProfilePhotoEditVC {
         print("프로필 수정 w/ 이미지")
         print(imageUrl)
         ImageUploadManager().imageUploadManager(imageURL: imageUrl, completion)
+//        self.delegate?.executeMyProfileReload()
+    }
+    
+    func saveProfile(params: ProfileEditInput, completion: @escaping () -> Void) {
+        print("도와주세요.......")
+//        self.delegate?.executeMyProfileReload()
+        ProfileEditDataManager().profileEditDataManager(params, completion)
+        
     }
 
     @IBAction func saveButtonDidTap(_ sender: Any) {
@@ -109,16 +119,17 @@ class ProfileEditViewController: UIViewController , callProfilePhotoEditVC {
                 let params = ProfileEditInput(nickname: editedNickname,
                                               description: editedDescription,
                                               profileImgUrl: urlStr)
-                ProfileEditDataManager().profileEditDataManager(params)
+                self.saveProfile(params: params) {
+                    self.delegate?.executeMyProfileReload()
+                }
                 
             }
-            
         }
   
         else {
             print("이미지 수정 안 함")
             let params = ProfileEditInput(nickname: editedNickname, description: editedDescription)
-            ProfileEditDataManager().profileEditDataManager(params)
+            self.saveProfile(params: params) {}
         }
         
         

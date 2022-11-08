@@ -9,7 +9,7 @@ import Alamofire
 import Foundation
 
 class ProfileEditDataManager {
-    func profileEditDataManager(_ parameter: ProfileEditInput) {
+    func profileEditDataManager(_ parameter: ProfileEditInput, _ completion: @escaping () -> Void) {
 
         guard let acToken = UserDefaults.standard.string(forKey: "accessToken")
             else
@@ -43,6 +43,7 @@ class ProfileEditDataManager {
                 case .success(let result):
                     print("프로필 화면 수정 성공")
                     debugPrint(response)
+                    completion()
                 case .failure(let error):
                     print("프로필 화면 수정 실패")
 //                    print(error.localizedDescription)
